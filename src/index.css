@@ -1,0 +1,489 @@
+body{
+  height: 1vh;
+  width: 100vw;
+  background-image: url(https://i0.wp.com/saintpolicesystems.com/wp-content/uploads/2018/06/blue-light-backgrounds-background-opera-image-graphics-community-speeddials.jpg?w=1440);
+ background-position: 0% 39%;
+ background-size: cover;
+background-repeat:no-repeat ;
+--nav-load-time:500ms;
+--nav-link-load-time: 700ms;
+--article-load-delay: calc(var(--nav-link-load-time)+var(var(--nav-load-time)))
+}
+
+
+.navbar{
+  font-family: 'Girassol', 'cursive'; 
+  animation: nav-load var(--nav-load-time) ease-in;
+}
+
+
+.navbar-brand{
+font-size: 3rem !important;
+color: red !important;
+animation-name: nav-link-load;
+animation-duration: var(--nav-link-load-time) ;
+animation-timing-function: ease-in;
+animation-delay: var(--nav-load-time);
+animation-fill-mode: forwards;
+transform: scale(0) ;
+}
+.navbar a{
+  font-size: 1.3rem !important;
+  }
+  .navbar li{
+    margin: 0 3px;
+    padding: 3px;
+    animation-name: nav-first-link-load;
+    animation-duration: var(--nav-link-load-time) ;
+    animation-timing-function: ease-in;
+    animation-delay: calc(var(--nav-load-time)+900ms);
+    animation-fill-mode: forwards;
+    transform: translateX(-1000%) ;
+  }
+
+
+  .menu_active{
+    font-weight: bold;
+    border-bottom: 1px solid red ;
+  }
+
+  .navbar a:hover{
+ color: red !important;
+  }
+
+  #logo{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  animation: img 1900ms ease-in 1330ms;
+  animation-fill-mode: forwards;
+  transform: translateX(1000%);
+  }
+  #header h1{
+    position: relative;
+    font-size: 4vw;
+    color:whitesmoke;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 0.3vw red;
+  }
+  #header h1::before{
+    content: "CHITKARA~MEET";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color:red;
+    -webkit-text-stroke: 0vw black;
+    border-right:5px solid red;
+    animation: h1 4s linear infinite;  
+    overflow: hidden;
+   
+  }
+#header .btn-get-started{
+  font-weight: 500px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px; 
+  transition: 0.5s;
+  color: red;
+  border: 2px solid red;
+  text-decoration: none;
+ 
+}
+#p1{
+  animation: p1 1300ms ease-in calc(var(--article-load-delay)+1020ms);
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transform: translateX(-1000%);
+}
+#btn{
+  animation: btn 2000ms ease-in 2000ms;
+  animation-fill-mode: forwards;
+  transform: translateX(-1000%);
+}
+
+#header .btn-get-started:hover{
+  background-color: red;
+  color: aliceblue;
+}
+#header .animated{
+  animation: left-right  1s ease-in-out infinite alternate-reverse both;
+}
+#feature_img{
+  height: 300px;
+  width: 300PX;
+}
+
+#m{
+  animation-name: m;
+animation-duration: 4900ms;
+animation-timing-function: ease-in;
+animation-delay: 4900ms;
+animation-fill-mode: forwards;
+transform: scale(0) ;
+}
+.parallex{
+  height: 30vw;
+  background-image: url(https://i.pinimg.com/originals/79/7f/f9/797ff9fca6954bf2bbb2f1500639535a.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  display: flex;
+  align-items: center;
+
+}
+#text{
+  background-color:whitesmoke;
+  align-items: center;
+}
+.parallax2{
+  height: 40vw;
+  background-image: url(https://manycam.com/blog/wp-content/uploads/2020/12/03-12-blog-How-to-Make-Your-Online-Classes-More-Engaging.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+#box{
+  position: absolute;
+  top: 20px ;
+  left: 20px ;
+  right: 20px ;
+  bottom: 20px ;
+  background: whitesmoke;
+  border: 2px solid black;
+
+}
+#i1{
+  animation-name: i1;
+  animation-duration:5500ms;
+  animation-timing-function: ease-in;
+  animation-delay: 5500ms;
+  animation-fill-mode: forwards;
+  transform: translateX(-1000%) ;
+}
+#i2{
+  animation-name: i2;
+  animation-duration:5900ms;
+  animation-timing-function: ease-in;
+  animation-delay: 5900ms;
+  animation-fill-mode: forwards;
+  transform: translateX(-1000%) ;
+}
+#class1{
+  box-shadow: 0 0 0 0 #E2E9ED;
+  padding: 5px 5px;
+  z-index: 0;
+  transition: 0.2s all;
+}
+#class1 #link{
+  opacity: 0 ;
+}
+#class1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 25px rgba(0,0,0,0.2);
+  z-index: 1;
+  opacity: 1;
+}
+#class1:hover #link{
+opacity: 1;
+}
+.ca{
+  margin-left:100px ;
+height: 600px;
+width: 800px;
+}
+.bl{
+  margin-right: 100px;
+}
+#c1{
+  animation-name: c1;
+  animation-duration: 900ms ;
+  animation-timing-function: ease-in;
+  animation-delay: 800ms;
+  animation-fill-mode: forwards;
+  transform: translateX(-1000%) ;
+}
+#c2{
+  animation-name: c2;
+  animation-duration: 1000ms ;
+  animation-timing-function: ease-in;
+  animation-delay: 1500ms;
+  animation-fill-mode: forwards;
+  transform: translateY(-1000%) ;
+}
+#c3{
+  animation-name: c3;
+  animation-duration: 1300ms ;
+  animation-timing-function: ease-in;
+  animation-delay: 1700ms;
+  animation-fill-mode: forwards;
+  transform: translateX(1000%) ;
+}
+#m1{
+  animation-name: m1;
+  animation-duration: 2500ms ;
+  animation-timing-function: ease-in;
+  animation-delay: 2500ms;
+  animation-fill-mode: forwards;
+  transform: translateX(-1000%) ;
+}
+#m2{
+  animation-name: m2;
+  animation-duration: 3000ms ;
+  animation-timing-function: ease-in;
+  animation-delay: 3000ms;
+  animation-fill-mode: forwards;
+  transform: translateY(-1000%) ;
+}
+#m3{
+  animation-name: m3;
+  animation-duration: 3500ms ;
+  animation-timing-function: ease-in;
+  animation-delay: 3500ms;
+  animation-fill-mode: forwards;
+  transform: translateX(1000%) ;
+}
+#c{
+  animation-name: c;
+animation-duration: 1900ms;
+animation-timing-function: ease-in;
+animation-delay: 1900ms;
+animation-fill-mode: forwards;
+transform: scale(0) ;
+}
+#fo{
+  color: #E2E9ED !important;
+  width:125;
+  height: 2px;
+}
+@-webkit-keyframes left-right{
+  0%{
+    transform: translateX(30px);
+  }
+  100%{
+    transform: translateX(-30px) ;
+  }
+}
+@keyframes left-right{
+  0%{
+    transform: translateX(30px);
+  }
+  100%{
+    transform: translateX(-30px) ;
+  }
+}
+@keyframes nav-load{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0) ;
+  }
+}
+
+@keyframes nav-link-load{
+  0%{
+    transform: scale(0);
+  }
+  90%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes nav-first-link-load{
+  0%{
+    transform: translateX(-1000%);
+  }
+  90%{
+    transform: translateX(50%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+  
+@keyframes h1{
+  0%,10%,100%{
+    width: 0;
+  }
+ 
+  70%,90%{
+    width: 100%;
+  }
+}
+@keyframes p1{
+  0%{
+    
+    transform: translateX(-1000%);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes img{
+  0%{
+    
+    transform: translateX(1000%);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes btn{
+  0%{
+    
+    transform: translateX(-1000%);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes m{
+  0%{
+    transform: scale(0);
+  }
+  90%{
+    transform: scale(1.7);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@keyframes i1{
+  0%{
+    transform: translateX(-1000%);
+  }
+  90%{
+    transform: translateX(50%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes i2{
+  0%{
+    transform: translateX(-1000%);
+  }
+  90%{
+    transform: translateX(50%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes c1{
+  0%{
+    transform: translateX(-1000%);
+  }
+  90%{
+    transform: translateX(50%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes c2{
+  0%{
+    transform: translateY(-1000%);
+  }
+  90%{
+    transform: translateY(50%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+@keyframes c2{
+  0%{
+    transform: translateY(-1000%);
+  }
+  90%{
+    transform: translateY(50%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+@keyframes c3{
+  0%{
+    transform: translateX(1000%);
+  }
+  90%{
+    transform: translateX(-50%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes c{
+  0%{
+    transform: scale(0);
+  }
+  90%{
+    transform: scale(1.7);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@keyframes m1{
+  0%{
+    transform: translateX(-1000%);
+  }
+  90%{
+    transform: translateX(50%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes m2{
+  0%{
+    transform: translateY(-1000%);
+  }
+  90%{
+    transform: translateY(50%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+@keyframes m2{
+  0%{
+    transform: translateY(-1000%);
+  }
+  90%{
+    transform: translateY(50%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+@keyframes m3{
+  0%{
+    transform: translateX(1000%);
+  }
+  90%{
+    transform: translateX(-50%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}

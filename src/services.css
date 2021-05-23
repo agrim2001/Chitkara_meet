@@ -1,0 +1,129 @@
+.container{
+    position: relative;
+    width:1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  .container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff ;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+  }
+  .container .card:hover{
+    height: 420px;
+  }
+  #head{
+  animation-name: head;
+animation-duration: 2500ms ;
+animation-timing-function: ease-in;
+animation-delay: 2500ms;
+animation-fill-mode: forwards;
+transform: scale(0) ;
+  }
+  #card1{
+    animation-name: card1;
+    animation-duration: 3000ms ;
+    animation-timing-function: ease-in;
+    animation-delay: 3000ms;
+    animation-fill-mode: forwards;
+    transform: translateX(-1000%) ;
+  }
+  #card2{
+    animation-name: card2;
+    animation-duration: 3500ms ;
+    animation-timing-function: ease-in;
+    animation-delay: 3500ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-1000%) ;
+  }
+  #card3{
+    animation-name: card3;
+    animation-duration: 4000ms ;
+    animation-timing-function: ease-in;
+    animation-delay: 4000ms;
+    animation-fill-mode: forwards;
+    transform: translateX(1000%) ;
+  }
+  .container .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1; 
+    box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+  }
+  .container.card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  .container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  .container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+  }
+  @keyframes head{
+    0%{
+      transform: scale(0);
+    }
+    90%{
+      transform: scale(1.9);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+  @keyframes card1{
+    0%{
+      transform: translateX(-1000%);
+    }
+    90%{
+      transform: translateX(50%);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
+  @keyframes card2{
+    0%{
+      transform: translateY(-1000%);
+    }
+    90%{
+      transform: translateY(50%);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+  @keyframes card3{
+    0%{
+      transform: translateX(1000%);
+    }
+    90%{
+      transform: translateX(-50%);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
